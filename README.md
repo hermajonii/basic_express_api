@@ -13,6 +13,20 @@ Authentication using JSON Web Tokens (JWT).
 Pagination when listing tasks.
 Validation for unique email addresses and usernames.
 
+Roles and Permissions
+Basic:
+ - Can create, update, and list their own tasks.
+Admin:
+ - Can list, update, and delete all tasks.
+
+### Built With
+
+Node.js – For server-side execution.
+Express.js – For building the REST API.
+PostgreSQL – For storing data in the database.
+Sequelize – ORM for PostgreSQL.
+JWT (JSON Web Token) – For user authentication.
+dotenv – For managing environment variables.
 
 ### Installation
 
@@ -50,3 +64,6 @@ Validation for unique email addresses and usernames.
    npm run dev 
    ```
    Application will be available at [https://localhost:3000](https://localhost:3000).
+
+## Usage
+   _For  examples, please refer to the [Documentation](https://app.swaggerhub.com/apis-docs/MILICT99_1/express_api/1#/)_
