@@ -16,17 +16,22 @@ Validation for unique email addresses and usernames.
 Roles and Permissions
 Basic:
  - Can create, update, and list their own tasks.
+
 Admin:
  - Can list, update, and delete all tasks.
 
 ### Built With
+ - Node.js – For server-side execution.  
 
-* Node.js – For server-side execution.
-* Express.js – For building the REST API.
-* PostgreSQL – For storing data in the database.
-* Sequelize – ORM for PostgreSQL.
-* JWT (JSON Web Token) – For user authentication.
-* dotenv – For managing environment variables.
+ - Express.js – For building the REST API.
+
+ - PostgreSQL – For storing data in the database.
+
+ - Sequelize – ORM for PostgreSQL.
+
+ - JWT (JSON Web Token) – For user authentication.
+ 
+ - dotenv – For managing environment variables.
 
 ### Installation
 
