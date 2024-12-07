@@ -34,10 +34,13 @@ Validation for unique email addresses and usernames.
     DB_NAME=task_management
 
    ```
+   These three should stay the same as they are in the file:
+   ```js
     PORT=3000
     DB_HOST=localhost
     DB_PORT=5432
-5. 
+    ```
+5. Run your application: 
     ```sh
     npm run dev 
     ```
