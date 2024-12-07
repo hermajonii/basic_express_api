@@ -21,30 +21,32 @@ Validation for unique email addresses and usernames.
    ```sh
    git clone https://github.com/hermajonii/Yettel_express_api.git
    ```
-3. Install NPM packages
+2. Install NPM packages
    ```sh
+   cd Yettel_express_api
    npm install
    ```
-4. Enter your data in `.env`
+3. Enter your data in `.env`
    ```js
-      JWT_SECRET=your-secret-key
-      DB_USER=your-db-user
-      DB_PASSWORD=your-db-password
-      DB_NAME=task_management
-
+   JWT_SECRET=your-secret-key
+   DB_USER=your-db-user
+   DB_PASSWORD=your-db-password
+   DB_NAME=task_management
    ```
    These three should stay the same as they are in the file:
    ```js
-    PORT=3000
-    DB_HOST=localhost
-    DB_PORT=5432
-    ```
-6.  Change git remote url to avoid accidental pushes to base project
+   PORT=3000
+   DB_HOST=localhost
+   DB_PORT=5432
+   ```
+4. Install PostgreSQL and run it
+5. Change git remote url to avoid accidental pushes to base project
    ```sh
    git remote set-url origin github_username/repo_name
    git remote -v # confirm the changes 
    ```
-5. Run your application: 
-    ```sh
-    npm run dev 
-    ```
+6. Run your application: 
+   ```sh
+   npm run dev 
+   ```
+   Application will be available at [https://localhost:3000](https://localhost:3000).
