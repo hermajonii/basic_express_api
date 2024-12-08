@@ -58,7 +58,7 @@ Admin:
    DB_HOST=localhost
    DB_PORT=5432
    ```
-4. Install PostgreSQL and run it
+4. Install PostgreSQL and run it. Make a database with the same name as the value of DB_NAME in `.env`. 
 5. Change git remote url to avoid accidental pushes to base project
    ```sh
    git remote set-url origin github_username/repo_name
