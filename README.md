@@ -1,4 +1,4 @@
-# Yettel_express_api
+# basic_express_api
 Express.js api for basic manipulations
 
 ## About The Project
@@ -38,11 +38,11 @@ Admin:
 
 1. Clone the repo
    ```sh
-   git clone https://github.com/hermajonii/Yettel_express_api.git
+   git clone https://github.com/hermajonii/basic_express_api.git
    ```
 2. Install NPM packages
    ```sh
-   cd Yettel_express_api
+   cd Basic_express_api
    npm install
    ```
 3. Enter your data in `.env`
