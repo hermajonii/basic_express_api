@@ -68,3 +68,5 @@ router.get('/listTasks', authenticate, authorize(['basic','admin']), async (req,
         res.status(400).json({ error: err.message });
     }
 });
+
+module.exports = router;

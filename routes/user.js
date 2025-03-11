@@ -1,12 +1,9 @@
 const express = require('express');
 const bcrypt = require('bcryptjs');
 const  User  = require('../models/User');
-const  Task  = require('../models/Task');
 const jwt = require("jsonwebtoken");    
 const { authorize, authenticate } = require("../middleware/auth");
 const router = express.Router();    
-
-
 
 router.post('/register', async (req, res) => {
     const { firstName, lastName, username, email, password, role } = req.body;
@@ -19,9 +16,9 @@ router.post('/register', async (req, res) => {
     }
 });
 router.post('/login', async (req, res) => {
-    const { email, password } = req.body;
+    const { username, password } = req.body;
     try {
-        const user = await User.findOne({ where: { email } });
+        const user = await User.findOne({ where: { username } });
         if (!user || !(await bcrypt.compare(password, user.password))) {
             return res.status(400).json({ message: 'Invalid credentials' });
         }
